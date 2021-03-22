@@ -3,62 +3,177 @@
 <!-- Exercitiu de practica - Enoiu Cristinel -->
 
 <head>
-    <title>Facebook 2.0</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Facebook 2.0 - Enoiu Cristinel</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <!-- Bara de Navigare-->
+    <!-- Navigation Bar-->
     <div id="nav-bar">
         <div class="search-wrapper-bar">
 
-            <!-- Imagine Logo -->
-            <div class="logo-wrapper">
-                <img src="./img/logo.png" alt="" class="logo-image">
+            <!-- Logo -->
+            <div class="logo-wrapper pointed">
+                <img src="./img/logo.png" alt="" class="logo-image ">
             </div>
 
-            <!-- Bara de cautare cu icon. -->
+            <!-- Search Bar -->
             <div class="search-wrapper">
                 <input type="text" placeholder="Search" class="search-field">
-                <img src="./img/search-fav.png" alt="" class="fav-icon">
+                <img src="./img/search-fav.png" alt="" class="fav-icon pointed">
             </div>
 
         </div>
 
-        <!-- Notificari-->
+        <!-- Notifications-->
         <div class="notifications-wrapper">
             <img src="./img/profile-pic.jpg" alt="" class="notifications-wrapper-profile">
-            <img src="./img/notification-1.png" alt="" class="notifications-wrapper-notification">
-            <img src="./img/notification-2.png" alt="" class="notifications-wrapper-notification">
-            <img src="./img/notification-3.png" alt="" class="notifications-wrapper-notification">
+            <img src="./img/notification-1.png" alt="" class="notifications-wrapper-notification pointed">
+            <img src="./img/notification-2.png" alt="" class="notifications-wrapper-notification pointed">
+            <img src="./img/notification-3.png" alt="" class="notifications-wrapper-notification pointed">
         </div>
 
     </div>
 
-    <!-- Continut pagina-->
+    <!-- Page Content-->
     <div class="container">
         <div class="left-side-bar">
+
+            <!-- User Information -->
             <div class="user-wrapper">
-                <div class="image-medium"></div>
-                <div class="name"></div>
-                <div class="position"></div>
+                <div class="image-medium">
+                    <img src="img/profile-pic.jpg" alt="" class="profile-image pointed">
+                </div>
+                <div class="personal-info">
+                    <div class="name pointed">
+                        <p>Falk Bogdan</p>
+                    </div>
+                    <div class="position">
+                        <p>Front-end Developer</p>
+                    </div>
+                </div>
             </div>
+            <!-- Separator-->
+            <div class="separator">
+                <img src="img/separator-line.png" alt="" class="separator-image">
+            </div>
+
+            <!-- User Skills -->
+            <div class="skills-wrapper">
+
+                <div class="skill pointed">
+                    <div>
+                        <img src="img/html-logo.png" alt="" class="skill-icon">
+                    </div>
+                    <div class="skill-text">Front-end</div>
+                </div>
+
+                <div class="skill pointed">
+                    <div>
+                        <img src="img/back-end-logo.png" alt="" class="skill-icon">
+                    </div>
+                    <div class="skill-text">Back-end</div>
+                </div>
+
+
+                <div class="skill pointed">
+                    <div>
+                        <img src="img/design-logo.png" alt="" class="skill-icon">
+                    </div>
+                    <div class="skill-text">Design</div>
+                </div>
+
+            </div>
+
 
         </div>
         <!-- Feed-->
         <div class="feed-wrapper">
+            <div class="feed-auth-image">
+                <img src="img/profile-pic.jpg" alt="" class="auth-image">
+            </div>
+
+            <!-- Feed Container-->
+            <div class="feed-container">
+
+                <div class="feed-info">
+                    <div class="feed-info-auth pointed">
+                        <p>Falk Bogdan</p>
+                    </div>
+                    <div class="feed-info-date">
+                        22/03/2021 - Romania
+                    </div>
+                </div>
+
+                <!-- Feed Image-->
+                <div class="feed-image-wrapper pointed">
+                    <img src="img/img-post-1.jpg" alt="" class="feed-image">
+                </div>
+                <div class="feed-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </p>
+                </div>
+
+                <!-- Feed Reaction-->
+                <div class="feed-reaction">
+                    <div class="feed-reaction-button pointed">
+                        <img src="img/like.png" alt="" class="feed-icon">
+                        <p class="feed-icon-text">Like</p>
+                    </div>
+
+                    <div class="feed-separator noselect">
+                        |
+                    </div>
+
+                    <div class="feed-reaction-button pointed">
+                        <img src="img/comment.png" alt="" class="feed-icon">
+                        <p class="feed-icon-text">Comment</p>
+                    </div>
+                </div>
+
+
+                <!-- Feed Post Comment-->
+                <div class="comment">
+
+                    <div class="post-comment">
+                        <img src="img/profile-pic.jpg" alt="" class="post-auth-image pointed">
+                        <input type="text" placeholder="Write a comment..." class="post-com-field">
+                    </div>
+
+                </div>
+            </div>
 
         </div>
 
-        <!-- Bara de Reclame-->
+        <!-- Ads Side-Bar -->
         <div class="right-side-bar">
-            <div class="ads-image"></div>
+
+            <div class="ads-image">
+                <img src="img/reclama.jpg" alt="" class="ad-image pointed">
+            </div>
+
             <div class="link-wrapper">
                 <div class="links">
+
+                    <div class="column-link">
+                        <div class="link-item pointed">Privay Policy</div>
+                        <div class="link-item pointed">Help</div>
+                    </div>
+
+                    <div class="column-link">
+                        <div class="link-item pointed">Careers</div>
+                        <div class="link-item pointed">About</div>
+                    </div>
+
+                    <div class="column-link">
+                        <div class="link-item pointed">Contact Support</div>
+                        <div class="link-item pointed">😄</div>
+                    </div>
 
                 </div>
             </div>
